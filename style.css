@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+body {
+    color: #444;
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0
+}
+a {
+    text-decoration: none
+}
+
+.bg-color{
+    background-color: #555;
+}
+
+.card:hover {
+    transition: all .3s
+}
+
+.card:hover {
+    box-shadow: 0 0 12px 0 rgba(5, 5, 5, .23)
+}
+
+.btn {
+    padding: 0.5 rem 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400
+}
+
+.btn-primary {
+    border-radius: 5px
+}
+
+.btn-rounded {
+    border-radius: 20px
+}
+
+.btn-rounded-custom {
+    border-radius: 100px
+}
+
+.btn-outlined {
+    border-width: 1px;
+    border-style: solid;
+    transition: all .5s
+}
+
+.btn-outlined:hover {
+    color: #fff;
+    transition: all .5s
+}
+
+.gradient-black {
+    background: #212121
+}
+
+.btn-orange {
+    border-color: #ff9f33;
+    color: #ff9f33
+}
+
+.btn-orange:hover {
+    background-color: #ff9f33;
+    color: white
+}
+
+.white-btn {
+    border-color: #ff9f33;
+    background: #ff9f33;
+    color:  #ffffff
+}
+
+.green-btn {
+    border-color:#6ab04c;
+    background: #6ab04c;
+    color:  #ffffff
+}
+.green-btn:hover{
+    border-color:#009432;
+    background: #009432;
+    color: #ffffff;
+}
+.white-btn:hover {
+    color:  #ff9f33;
+    background: #ffffff;
+    border-color: #ff9f33;
+}
+
+.responsive-image {
+    overflow: hidden
+}
+
+.responsive-image img{
+    width: 100%
+}
+
+.mt-footer{
+    margin-top: 10rem;
+}
+
+.nav-link-custom{
+    padding: 7px;
+    color: #555;
+    font-weight:500;
+}
+.nav-link-custom:hover{
+    color:#ff9f33;
+    text-decoration: none;
+}
+.nav-link-custom.active{
+    color: #ff9f33;
+}
+.text-orange{
+    color:#ff9f33
+}
+.text-orange:hover{
+    color:#ff8b33;
+}
+.text-white{
+    color: #ffffff
+}
+
+.text-brand{
+color: #444;
+font-size: 22px;
+font-weight: 600;
+}
+.text-brand:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hub{
+    padding: 5px;
+    color:white;
+    background-color:#ff9f33;
+    border-radius : 7%;
+}
+
+.btn-full-orange {
+    background-color: #ff9f33;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-full-orange:hover{
+    background-color: #ff8b33;
+}
+
+.discount-prize{
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.description{
+    line-height: 1.7 ;
+    text-align: justify
+}
+
