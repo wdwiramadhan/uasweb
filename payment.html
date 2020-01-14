@@ -53,44 +53,149 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-          <div class="responsive-image">
-              <img src="./img/contact.png"alt="">
-          </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card p-5">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputName1">Name</label>
-              <input type="text" class="form-control" id="exampleInputName1" name="name">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPhoneNumber1">Phone Number</label>
-              <input type="text" class="form-control" id="exampleInputPhoneNumber1" name="numberphone" placeholder="Eg. 085727122121">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control" name="email" id="exampleInputEmail1" >
-            </div>  
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Expedition</label>
-              <select class="form-control" name="expedition" id="exampleFormControlSelect1">
-                <option>---- select ----</option>
-                <option value="JNT">JNT</option>
-                <option value="JNT">JNE</option>
-                <option value="SiCepat">SiCepat</option>
-                <option value="TIKI">TIKI</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Address</label>
-              <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mt-4">
-              <button type="button" class="btn btn-full-orange text-white paynow" data-toggle="modal" data-target="#exampleModal">Pay Now</button>
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" id="tampilProduct">Product Name</h6>
+              </div>
+              <span class="text-muted" id="tampilHarga">0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Expedition</h6>
+              </div>
+              <span class="text-muted" id="tampilOngkir">0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Discount</h6>
+              </div>
+              <span class="text-success">0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (Rp)</span>
+              <strong id="total">0</strong>
+            </li>
+          </ul>
+    
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
             </div>
           </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Shipping address</h4>
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 col-12">
+                      <label for="product" class="form-control-label">Product</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <select class="form-control" name="product" id="product" required>
+                        <option value=" ">-- Select Product --</option>
+                        <option value="56000">Bara</option>
+                        <option value="72000">Dunia Shopie</option>
+                        <option value="80000">The Power Of Habbit</option>
+                        <option value="85000">Steal Like An Artist</option>
+                        <option value="90000">The Adventure of Sharlock</option>
+                        <option value="80000">Bicara Itu Ada Seninya</option>
+                        <option value="70000">Javacript Undercover</option>
+                        <option value="80000">Sebuah Seni Bodo Amat</option>
+                        <option value="75000">English Grammar</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 col-12">
+                      <label for="name" class="form-control-label">Name</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <input class="form-control" type="text" name="name" id="name" autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 col-12">
+                      <label for="email" class="form-control-label">Email</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <input class="form-control" type="text" name="email" id="email" autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 col-12">
+                      <label for="telephone" class="form-control-label">Telephone</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <input class="form-control" type="text" name="telephone" id="telephone" autocomplete="off" placeholder="Ex. 08572799123">
+                    </div>  
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 col-12">
+                      <label for="expedition" class="form-control-label">Expedition</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <select class="form-control" name="expedition" id="expedition" required>
+                        <option>-- Select Expedition --</option>
+                        <option value="27000">JNT</option>
+                        <option value="26000">JNE</option>
+                        <option value="20000">SiCepat</option>
+                      </select>
+                    </div>  
+                  </div>
+                </div>
+                <div class="form mb-3">
+                  <div class="row mt--2">
+                    <div class="col-md-2 col-12">
+                      <label class="form-control-label">Alamat</label>
+                    </div>
+                    <div class="col-md-10 col-12">
+                      <div class="row">
+                        <div class="col-md-4 col-12 mb-2">
+                          <select class="form-control" name="city">
+                            <option>-- Select Provinsi --</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 col-12 mb-2">
+                          <select class="form-control" name="districts">
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 col-12 mb-2">
+                          <select class="form-control" name="village">
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 col-12">
+                          <textarea class="form-control" name="address" rows="3" placeholder="Address"></textarea>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" name="submit" class="btn green-btn p-2 mt-5 btn-block paynow" data-toggle="modal" data-target="#exampleModal">Paynow</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -128,6 +233,16 @@
           </button>
         </div>
         <div class="modal-body">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-3 mt-2">
+                <label for="product">Product</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control-plaintext modal-product" id="product">
+              </div>
+            </div>
+          </div>
           <div class="form-group">
             <div class="row">
               <div class="col-md-3 mt-2">
@@ -179,7 +294,7 @@
             </div>
           </div>
           <div class="alert alert-warning" role="alert">
-          <a>Total Rp 175.000</a><br>
+          <a id="modalTotalHarga"></a><br>
           <a>Transfer ke 231299421321123 (BRI) - Ardi Sanjaya </a>
           </div>
         </div>
@@ -189,25 +304,151 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script>
     $(document).ready(()=>{
-      $('.paynow').click(()=>{
-        let name = $('[name=name]').val()
-        let numberphone = $('[name=numberphone]').val()
-        let email = $('[name=email]').val()
-        let expedition = $('[name=expedition]').val()
-        let address = $('[name=address]').val()
-
-        $('.modal-name').val(name)
-        $('.modal-numberphone').val(numberphone)
-        $('.modal-email').val(email)
-        $('.modal-expedition').val(expedition)
-        $('.modal-address').val(address)
+      $('[name=product]').change(()=>{
+        let product = $('[name=product] option:selected').text()
+        let hargaProduct = parseInt($('[name=product]').val())
+        let ongkir =  parseInt($('[name=expedition]').val())
+        if(isNaN(ongkir) ){
+          ongkir = 0
+        }
+        $('#tampilProduct').text(product)
+        $('#tampilHarga').text(`Rp ${hargaProduct}`)
+        $('#total').text(`Rp ${hargaProduct + ongkir}`)
+      })
+      $('[name=expedition]').change(()=>{
+        let ongkir =  parseInt($('[name=expedition]').val())
+        let hargaProduct = parseInt($('[name=product]').val())
+        $('#tampilOngkir').text(`Rp ${ongkir}`)
+        $('#total').text(`Rp ${ongkir + hargaProduct}`)
+      })
+      $('[name=submit').click((e) => {
+        e.preventDefault()
       })
     })
-  </script>
+</script>
+ <script>
+  var token = function() {
+    var tmp = null;
+    $.ajax({
+      'async': false,
+      'type': "get",
+      'global': false,
+      'dataType': 'json',
+      'url': 'https://x.rajaapi.com/poe',
+      'success': function(data) {
+          tmp = data.token;
+      }
+    });
+    return tmp;
+  }();
+  function getToken(){
+    fetch('https://x.rajaapi.com/poe')
+      .then((res)=>{
+        res = res.json()
+        console.log(res)
+      })
+  }
+  
+  getToken()
+  async function getCity(){
+    try{
+      const res = await fetch(`https://x.rajaapi.com/MeP7c5ne${token}/m/wilayah/provinsi`)
+      const cities = await res.json()
+      cities.data.forEach((city) => {
+        document.querySelector('[name=city]').innerHTML +=
+        ` <option id="${city.id}" value="${city.name}">${city.name}</option>`
+      })
+    }catch(err){
+      console.log(err)
+    }
+  }
+  getCity()
+
+  async function getDistricts(id){
+    try{
+      const res = await fetch(`https://x.rajaapi.com/MeP7c5ne${token}/m/wilayah/kabupaten?idpropinsi=${id}`)
+      const districts = await res.json()
+      document.querySelector('[name=districts]').innerHTML = ' '
+      districts.data.forEach( (district) => {
+        document.querySelector('[name=districts]').innerHTML +=
+        ` <option id="${district.id}" value="${district.name}">${district.name}</option>`
+      })
+    }catch(error){
+      console.log(error)
+    }
+  }
+
+  const btnGetCity = document.querySelector('[name=city]')
+  btnGetCity.addEventListener('change', () => {
+    var id
+    let value = document.querySelector('[name=city]').value
+    let listNodeCity = document.querySelectorAll('[name=city] option')
+    for(i = 0; i< listNodeCity.length; i++){
+      if(value == listNodeCity[i].value){
+        id = listNodeCity[i].id
+        break;
+      }
+    }
+    getDistricts(id)
+  })
+
+  async function getVillage(id){
+    try{
+      const res = await fetch(`https://x.rajaapi.com/MeP7c5ne${token}/m/wilayah/kecamatan?idkabupaten=${id}`)
+      const village = await res.json()
+      console.log(village)
+      document.querySelector('[name=village]').innerHTML = 0
+      village.data.forEach( (vlg) => {
+        document.querySelector('[name=village]').innerHTML +=
+        ` <option id="${vlg.id}" value="${vlg.name}">${vlg.name}</option>`
+      })
+    }catch(error){
+      console.log(error)
+    }
+  }
+
+  const btnGetDistrict = document.querySelector('[name=districts]')
+  btnGetDistrict.addEventListener('change', () => {
+    var id
+    let value = document.querySelector('[name=districts]').value
+    let listNodedistricts = document.querySelectorAll('[name=districts] option')
+    for(i = 0; i< listNodedistricts.length; i++){
+      if(value == listNodedistricts[i].value){
+        id = listNodedistricts[i].id
+        break;
+      }
+    }
+    getVillage(id)
+  })
+</script>
+ <script>
+  $(document).ready(()=>{
+    $('.paynow').click(()=>{
+      let product = $('[name=product] option:selected').text()
+      let name = $('[name=name]').val()
+      let numberphone = $('[name=telephone]').val()
+      let email = $('[name=email]').val()
+      let expedition = $('[name=expedition] option:selected').text()
+      let address = `${$('[name=city]').val()}, ${$('[name=districts]').val()}, ${$('[name=village]').val()}, ${$('[name=address]').val()}`
+      let totalHarga =  $('#total').text()
+
+      $('.modal-product').val(product)
+      $('.modal-name').val(name)
+      $('.modal-numberphone').val(numberphone)
+      $('.modal-email').val(email)
+      $('.modal-expedition').val(expedition)
+      $('.modal-address').val(address)
+      $('#modalTotalHarga').text(`Total ${totalHarga}`)
+    })
+  })
+</script>
 </body>
 </html>
